@@ -1,0 +1,443 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import "~font-awesome";
+@import "colors";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap');
+
+@mixin desktop() {
+    p, a, h1, h2, h3, h4 {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        min-height: 2000px;
+    }
+    .container {
+        max-width: 95%;
+        padding: 0;
+        @include media-breakpoint-down(md) {
+            max-width: 100%;
+            padding: 10px;
+        }
+    }
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+        flex-grow: 1;
+
+        .dropdown-menu.show{
+            z-index: 1020;
+        }
+        .brand {
+            img {
+                height: 67px;
+            }
+        }
+
+        .nav-right {
+            display: flex;
+            flex-grow: 2;
+            justify-content: flex-end;
+            align-items: center;
+
+            .contact {
+                display: flex;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+
+                .contact-item {
+                    display: flex;
+                    margin: 0 5px;
+                    align-items: center;
+
+                    .contact-icon{
+                        color: $blue-green;
+                        height: 43px;
+                        width: 43px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 2em;
+                        border: solid 1px $blue-green;
+                        margin-right: 8px;
+                    }
+                    img {
+                        height: 43px;
+                    }
+
+                    .contact-text {
+                        .contact-title {
+                            font-size: 1em;
+                        }
+
+                        .contact-number {
+                            font-weight: bold!important;
+                            font-size: 0.8em!important;
+                        }
+                    }
+                }
+            }
+
+            .sosial-media {
+                display: flex;
+                margin: 0 5px;
+                align-items: center;
+                @include media-breakpoint-down(xs) {
+                    .sosial-media-title {
+                        display: none;
+                    }
+                }
+
+                .sosial-media-link {
+                    border: solid 1px $blue-green;
+                    border-radius: 0.5em;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                    font-size: 1.3em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        height: 23px;
+                    }
+                }
+            }
+        }
+    }
+    .navbar {
+        position: sticky!important;
+        top: 0;
+        z-index: 1010;
+        padding: 3px 0;
+        background-color: $blue-green !important;
+        @include media-breakpoint-down(sm) {
+            padding: 4px;
+        }
+        .nav-contact{
+            display: none!important;
+            @include media-breakpoint-between(xs,sm){
+                display: flex!important;
+            }
+        }
+        .nav-full{
+            @include media-breakpoint-between(xs,sm){
+                position: fixed;
+                overflow: scroll;
+                display: block;
+                background-color: $blue-green;
+                height: 100vh;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: -100;
+                padding: 10px;
+                transform: translateX(-100%);
+                transition: all 1s;
+                opacity: 0;
+            }
+            .logo{
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                @include media-breakpoint-between(xs,sm){
+                    display: flex;
+                    .btn-close{
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                    }
+                }
+                img{
+                    height: 85px;
+                }
+                .btn{
+                    background-color: $dark-cornflower-blue;
+                    width: 100%;
+                }
+            }
+        }
+        .nav-full.show{
+            @include media-breakpoint-between(xs,sm){
+                z-index: 1009!important;
+                opacity: 1;
+                transform: translateX(0)!important;
+            }
+        }
+        .navbar-nav{
+            @include media-breakpoint-only(lg){
+                width: 60%;
+            }
+            @include media-breakpoint-only(md){
+                width: 80%;
+            }
+            @include media-breakpoint-up(xl){
+                width: 50%;
+            }
+        }
+        .nav-item {
+            .nav-link {
+                color: $powder-blue;
+            }
+        }
+
+        .nav-item.dropdown {
+            @include media-breakpoint-down(sm){
+                width: 100%;
+            }
+        }
+
+        .dropdown-menu {
+            border-radius: 0;
+            @include media-breakpoint-up(md){
+                display: block;
+                overflow: hidden;
+                height: 0;
+                padding: 0;
+                transform: translateY(50%);
+                opacity: 0;
+            }
+            &:last-child {
+                border-bottom: solid 3px $dark-cornflower-blue;
+            }
+        }
+
+        .dropdown:hover > .dropdown-menu {
+            transform: translateY(0);
+            height: auto;
+            opacity: 1;
+            transition: all 0.6s;
+            display: block;
+        }
+    }
+    #benner{
+        padding: 0;
+        .carousel-item{
+            img{
+                object-fit: cover;
+                height: 500px;
+                transition: all 0.6s;
+                @include media-breakpoint-between(xs,sm){
+                    height: 300px;
+                }
+                @include media-breakpoint-only(md){
+                    height: 400px;
+                }
+            }
+        }
+    }
+    #welcome{
+        .welcome-title{
+            padding: 10px;
+            .sub-title{
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            h2{
+                font-family: Pacifico;
+                margin: 5px 0;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+    #fasilitas{
+        background-color: $sky-blue-crayola;
+        padding: 10px 5px;
+        .fasilitas-titile{
+            text-align: center;
+        }
+        .card,.card-body{
+            border: none;
+        }
+        .card-fasilitas{
+            margin: 10px;
+            .card-body{
+                .card-title{
+                    margin: 0;
+                    padding: 3px;
+                    background-color: $blue-green;
+                    color: $powder-blue;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #berita{
+        background: url("https://images.unsplash.com/photo-1575654402601-0f17b752126e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=762&q=80");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 20px;
+        .berita-title{
+            text-transform: capitalize;
+            color: white;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .berita-kategori{
+            background: $navy-blue;
+            color: $powder-blue;
+            padding: 10px;
+            font-size: 1.2em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline;
+        }
+        .card,.card-body{
+            border: none;
+        }
+        .card-img-top{
+            border-radius: 0;
+        }
+        .card{
+            .card-body{
+                .card-title{
+                    font-size: 1.2em;
+                }
+                .card-date{
+                    float: right;
+                    text-align: right;
+                    font-size: 0.8em;
+                    font-weight: bold;
+                    &:before{
+                        content: '';
+                        border-top: dotted 1px $blue-green;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    #kontak{
+        text-transform: capitalize;
+        .kontak-info{
+            padding: 15px;
+            input{
+                text-transform: capitalize;
+            }
+        }
+    }
+    #visit{
+        padding: 20px;
+        background-color: $powder-blue;
+        @include media-breakpoint-down(sm){
+            text-align: center;
+            .visit-title{
+                p{
+                    background-color: #1d68a7;
+                    display: block!important;
+                    width: 100%;
+                }
+            }
+        }
+        .visit-title{
+            font-family:Pacifico ;
+            font-size: 2.2em;
+            text-align: center;
+        }
+        .img-logo{
+            height: 100px;
+        }
+        .sosial-media{
+            display: flex;
+            justify-content: center;
+            @include media-breakpoint-up(md){
+                justify-content: flex-end;
+            }
+            .sosial-media-title{
+                display: none;
+            }
+            .sosial-media-link{
+                padding: 5px;
+                font-size: 2.2em;
+            }
+        }
+    }
+    #footer{
+        padding: 20px;
+        background-color: $dark-cornflower-blue;
+        color: $powder-blue;
+        h2{
+            font-size: 1.4em;
+            font-family: Caveat;
+            letter-spacing: 1.2px;
+        }
+    }
+    #dokter{
+        padding: 20px 10px;
+        .dokter-title{
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: capitalize;
+            h2{
+                font-weight: bold;
+            }
+        }
+        .card-img{
+            height: 250px;
+            object-fit: cover;
+        }
+        .card-title{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        .rating{
+            font-size: 1.5em;
+        }
+        h5{
+            font-size: 1.2em;
+        }
+    }
+    .benner-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background-size: cover;
+        background-attachment: fixed!important;
+        background-repeat: no-repeat;
+        .title{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                text-transform: capitalize;
+                font-weight: bold;
+                text-shadow: 0 0 2px $blue-green;
+                font-size: 2.5em;
+                color: $dark-cornflower-blue;
+            }
+            .benner-tags{
+                text-transform: capitalize;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    padding: 0 2px;
+                    a{
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include desktop;
+

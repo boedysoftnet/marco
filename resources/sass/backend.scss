@@ -1,0 +1,127 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import "~font-awesome";
+@import "colors";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap');
+
+@mixin desktop() {
+    p, a, h1, h2, h3, h4 {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        background-color: $dark-cornflower-blue;
+        .navbar-brand{
+            .logo{
+                display: none;
+                height: 35px;
+                margin-right: 5px;
+            }
+        }
+        .dropdown-menu{
+            border-radius: 0;
+            padding: 0;
+        }
+        .dropdown-menu.show{
+            background-color: $powder-blue;
+            min-width: 250px;
+            transform: translateX(-68%);
+            transition: 0.6s;
+            @include media-breakpoint-down(md){
+                transform: translateX(0);
+            }
+        }
+        .navbar-profile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: $star-command-blue;
+            color: $powder-blue;
+            img{
+                height: 85px;
+            }
+            h2{
+                margin-top: 5px;
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+        }
+    }
+    #panel{
+        .panel-content{
+            padding: 20px;
+        }
+        .panel-side{
+            background-color: $blue-green;
+            height: 100vh;
+            .side-menu{
+                text-transform: capitalize;
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+                .side-profile{
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+                    align-items: center;
+                    padding: 20px 0;
+                    background-color: $star-command-blue;
+                    color: $powder-blue;
+                    .btn{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        border-radius: 2em;
+                        border: none;
+                        padding: 8px;
+                        box-shadow: 0 0 2px $powder-blue;
+                        background-color: $dark-cornflower-blue;
+                        .fa{
+                            font-size: 1.2em;
+                        }
+                    }
+                    img{
+                        height: 85px;
+                    }
+                    h2{
+                        margin-top: 5px;
+                        font-weight: bold;
+                        font-size: 1.4em;
+                    }
+                }
+                .side-dropdown{
+                    .fa{
+                        font-size: 1em;
+                        margin-left: 20px;
+                    }
+                    a{
+                        background-color: $powder-blue;
+                        color: $dark-cornflower-blue;
+                    }
+                }
+                .fa{
+                    font-size: 1.7em;
+                    margin-right: 5px;
+                    padding-left: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px;
+                    color: $powder-blue;
+                    border-bottom: dotted 1px $dark-cornflower-blue;
+                }
+            }
+        }
+    }
+}
+
+@include desktop;
+
