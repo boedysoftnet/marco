@@ -14087,3 +14087,29 @@ h4 {
   border-bottom: dotted 1px #023e8a;
 }
 
+.table thead tr th {
+  padding: 5px;
+  background-color: #ade8f4;
+  color: #03045e;
+}
+
+.table tbody tr td {
+  padding: 2px 5px;
+}
+
+.loading {
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.loading h3 {
+  text-transform: capitalize;
+}
+

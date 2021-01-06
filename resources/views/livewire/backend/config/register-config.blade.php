@@ -1,5 +1,5 @@
 <div>
-    <h2 class="text-uppercase">{{__('page.list-config')}}</h2>
+    <h2 class="text-uppercase">{{$data['slug']}}</h2>
     <hr>
     <div class="card">
         <div class="card-body">
@@ -38,4 +38,5 @@
             </form>
         </div>
     </div>
+    <x-loading target="simpan"/>
 </div>

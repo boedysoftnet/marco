@@ -16,9 +16,9 @@ class CreateConfigsTable extends Migration
         Schema::create('configs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->references('id')->on('users')->cascadeOnDelete();
-            $table->string('slug');
-            $table->string('judul');
-            $table->longText('deskripsi');
+            $table->longText('slug');
+            $table->longText('juduls');
+            $table->longText('deskripsis');
             $table->longText('gallerys');
             $table->softDeletes();
             $table->timestamps();
