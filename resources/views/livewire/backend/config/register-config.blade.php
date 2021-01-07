@@ -1,10 +1,10 @@
 <div>
     <h2 class="text-uppercase">{{$data['slug']}}</h2>
     <hr>
-    <div class="card">
+    <div class="card" wire:ignore>
         <div class="card-body">
             @php($langs=\App\Models\Lang::get())
-            <form class="text-capitalize" wire:submit.prevent="simpan" wire:ignore>
+            <form class="text-capitalize" wire:submit.prevent="simpan">
                 <nav class="mb-3">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         @foreach ($langs as $index=>$item)
@@ -24,7 +24,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="">{{__('description')}}</label>
-                                <textarea cols="30" rows="5" class="form-control" wire:model="data.deskripsis.{{$item->slug}}"></textarea>
+                                <textarea id="{{$item->slug}}" cols="30" rows="5" class="form-control summernote" wire:model="data.deskripsis.{{$item->slug}}"></textarea>
                             </div>
                         </div>
                     @endforeach
@@ -39,4 +39,23 @@
         </div>
     </div>
     <x-loading target="simpan"/>
+    @push('scripts')
+        <script !src="">
+            $(function () {
+                $('.summernote').summernote({
+                    height:300,
+                    callbacks:{
+                        onChange:function (contents,$editable) {
+                            @foreach ($langs as $item)
+                                var slug=$(this).attr('id');
+                                if(slug==="{{$item->slug}}"){
+                                    @this.set("data.deskripsis.{{$item->slug}}",contents)
+                                }
+                            @endforeach
+                        }
+                    }
+                });
+            })
+        </script>
+    @endpush
 </div>

@@ -16,13 +16,13 @@
                 </div>
                 <a href="" class="btn btn-primary">{{__('page.appointment')}}</a>
             </li>
-            <li class="nav-item"><a href="" class="nav-link">{{__('page.home')}}</a></li>
+            <li class="nav-item"><a href="{{route('front.home')}}" class="nav-link">{{__('page.home')}}</a></li>
             <li class="nav-item dropdown">
                 <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"
                    id="about-us">{{__('page.about-us')}}</a>
                 <div class="dropdown-menu" aria-labelledby="about-us">
-                    <a href="{{route('front.page-config','their-our')}}" class="dropdown-item">{{__('page.their-our')}}</a>
                     <a href="{{route('front.page-config','our-story')}}" class="dropdown-item">{{__('page.our-story')}}</a>
+                    <a href="{{route('front.page-config','vision-mission')}}" class="dropdown-item">{{__('vision-mision')}}</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -34,7 +34,7 @@
                     <a href="" class="dropdown-item">{{__('page.doctor-consultant')}}</a>
                 </div>
             </li>
-            <li class="nav-item"><a href="" class="nav-link">{{__('page.contact-us')}}</a></li>
+            <li class="nav-item"><a href="{{route('front.page-config','contact-us')}}" class="nav-link">{{__('page.contact-us')}}</a></li>
             <li class="nav-item"><a href="" class="nav-link">{{__('page.membership')}}</a></li>
         </ul>
     </div>

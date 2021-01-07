@@ -10,6 +10,11 @@
         </div>
     </div>
     <div class="content my-4 m-3">
-        <p>{!! \App\Helper\BoedySoft::trans($info->deskripsis) !!}</p>
+        <p>{!! \App\Helper\BoedySoft::trans($info->deskripsis) !!}
+        <div class="clearfix"></div>
+        </p>
     </div>
+    @if($info->slug=='our-story')
+        @include('livewire.front.page.story')
+    @endif
 </div>

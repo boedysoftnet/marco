@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/backend.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('vendor/summernote/summernote.css')}}">
     @livewireStyles
     <title>{{config('app.name')}}</title>
 </head>
@@ -21,6 +22,14 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#"><span class="fa fa-dashboard"></span> {{__('page.dashboard')}}</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" id="my-lang"> <span class="fa fa-language"></span> {{__('language')}}</a>
+                <div class="dropdown-menu" aria-labelledby="my-lang">
+                    @foreach (\App\Models\Lang::get() as $item)
+                        <a href="{{route('front.set-lang',$item->slug)}}" class="dropdown-item">{{$item->lang}}</a>
+                    @endforeach
+                </div>
             </li>
             <li class="nav-item dropdown">
                 <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" id="my-profile"> <span class="fa fa-user-circle"></span> {{__('page.profile')}}</a>
@@ -53,10 +62,10 @@
         </div>
     </div>
 </section>
-
 @livewireScripts
-@stack('scripts')
 <script src="{{asset('js/app.js')}}"></script>
+<script src="{{asset('vendor/summernote/summernote.js')}}"></script>
+@stack('scripts')
 <script !src="">
     $(function () {
         $(".btn-close").click(function () {

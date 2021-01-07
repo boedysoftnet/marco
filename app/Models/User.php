@@ -45,4 +45,12 @@ class User extends Authenticatable
     {
         return $this->hasMany(Config::class);
     }
+    public function story()
+    {
+        return $this->hasMany(Story::class);
+    }
+    public function dokter()
+    {
+        return $this->hasMany(Dokter::class);
+    }
 }

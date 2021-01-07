@@ -14019,6 +14019,9 @@ h4 {
 #panel .panel-side {
   background-color: #0096c7;
   height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #panel .panel-side .side-menu {

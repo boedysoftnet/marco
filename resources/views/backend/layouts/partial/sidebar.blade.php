@@ -7,7 +7,9 @@
     </div>
     <a href=""><span class="fa fa-dashboard"></span> {{__('page.dashboard')}}</a>
     <a href="{{route('backend.config.daftar-config')}}"><span class="fa fa-gears"></span> {{__('page.config')}}</a>
+    <a href="{{route('backend.story.daftar-story')}}"><span class="fa fa-history"></span> {{__('our-story')}}</a>
     <a href="{{route('backend.lang.daftar-lang')}}"><span class="fa fa-language"></span> {{__('page.language')}}</a>
+    <a href="{{route('backend.dokter.daftar-dokter')}}"><span class="fa fa-list-alt"></span> {{__('list-doctors')}}</a>
     <a href="" data-toggle="collapse" data-target="#news"><span class="fa fa-newspaper-o"></span> {{__('page.news')}}</a>
     <div class="collapse side-dropdown" id="news">
         <a href=""><span class="fa fa-plus"></span>{{__('page.add-news')}}</a>

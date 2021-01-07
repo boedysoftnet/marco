@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     @livewireStyles
+    @stack('styles')
     <title>{{config('app.name')}}</title>
 </head>
 <body>
