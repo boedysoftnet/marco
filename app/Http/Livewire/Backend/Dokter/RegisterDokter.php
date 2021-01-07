@@ -16,7 +16,7 @@ class RegisterDokter extends Component
 
     public function mount(Dokter $dokter)
     {
-        if ($dokter) {
+        if (count($dokter->toArray())) {
             $this->data = $dokter->toArray();
             unset($this->data['path']);
         } else {

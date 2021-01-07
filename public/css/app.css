@@ -14426,6 +14426,17 @@ h4 {
   font-weight: bold;
 }
 
+#dokter .rating {
+  font-size: 1.2em;
+}
+
+#dokter h4 {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: darkred;
+}
+
 #dokter .card-img {
   height: 250px;
   -o-object-fit: cover;

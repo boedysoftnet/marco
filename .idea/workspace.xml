@@ -19,37 +19,25 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6b3a637-c6a7-4b72-8523-74b1790bce58" name="Default Changelist" comment="tran">
-      <change afterPath="$PROJECT_DIR$/public/vendor/timeline/css/timeline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/timeline/images/arrow-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/timeline/images/arrow-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/timeline/js/timeline.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/timeline/js/timeline.prod.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/page/story.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helper/BoedySoft.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper/BoedySoft.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Backend/Dokter/RegisterDokter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Dokter/RegisterDokter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/backend.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/backend.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/backend.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/partial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/partial/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/dokter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/dokter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/backend/config/daftar-config.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/backend/config/daftar-config.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/backend/config/register-config.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/backend/config/register-config.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/page/their-our.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/page/their-our.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +56,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -184,7 +177,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1me6OdlVuoMoAfNe4r9rGDZLTyr" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -215,7 +208,7 @@
       <recent name="E:\web design\marco\resources\lang" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.server">
+  <component name="RunManager" selected="npm.watch">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -262,7 +255,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -298,6 +291,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -340,35 +338,47 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="343" y="16" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1609986618797" />
-    <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1609979791176">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1610008478418">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609930133312" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1610008478418" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1610010665702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610010665702" />
     <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
-    <state width="1397" height="222" key="GridCell.Tab.0.center" timestamp="1609979791176">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1610010665702">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609930133312" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610010665702" />
     <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
-    <state width="1397" height="222" key="GridCell.Tab.0.left" timestamp="1609979791175">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1610010665701">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609930133312" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610010665701" />
     <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1609979791175" />
-    <state width="1397" height="222" key="GridCell.Tab.0.right" timestamp="1609979791176">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1610010665702">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609930133312" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610010665702" />
     <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609841800634">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1609841800634" />
+    <state x="514" y="87" key="NewPhpClassDialog" timestamp="1610011266914">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="514" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1610011266914" />
     <state x="194" y="11" key="SettingsEditor" timestamp="1609949584133">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1609928325086" />
     <state x="194" y="11" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1609949584133" />
+    <state x="92" y="92" width="1182" height="544" key="ShowDiffWithBranchDialog" timestamp="1610008478418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="ShowDiffWithBranchDialog/0.0.1366.728@0.0.1366.728" timestamp="1610008478418" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1609841713334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -377,15 +387,15 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1609953945700" />
-    <state x="357" y="191" key="run.anything.popup" timestamp="1609988771836">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1610012460181">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609844045761" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1610012460181" />
     <state x="357" y="191" key="run.anything.popup/0.0.1440.860@0.0.1440.860" timestamp="1609988771836" />
-    <state x="365" y="58" width="709" height="801" key="search.everywhere.popup" timestamp="1610000670405">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610012425927">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1609929904883" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610012425927" />
     <state x="365" y="58" width="709" height="801" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1610000670405" />
   </component>
 </project>
