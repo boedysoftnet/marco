@@ -14,6 +14,7 @@ use App\Http\Livewire\Backend\Service\RegisterService;
 use App\Http\Livewire\Backend\Story\DaftarStory;
 use App\Http\Livewire\Backend\Story\RegisterStory;
 use App\Http\Livewire\Front\Dokter\ProfileDokter;
+use App\Http\Livewire\Front\Page\ServiceInfo;
 use App\Http\Livewire\Front\Page\TheirOur;
 use App\Http\Livewire\Front\Service\ProfileService;
 use Illuminate\Support\Facades\Route;
@@ -59,6 +60,8 @@ Route::group(['prefix' => '', 'as' => 'front.'], function () {
         Route::get('profile-dokter/{dokter}', ProfileDokter::class)->name('profile-dokter');
     });
     Route::group(['prefix' => 'service', 'as' => 'service.'], function () {
+        Route::get('profile-test/{kategoriId}/{serviceId}', ServiceInfo::class)->name('test-service');
+        Route::get('profile-info/{kategoriSlug}/{serviceSlug}', ServiceInfo::class)->name('info-service');
         Route::get('profile-service/{kategoriService:slug}', ProfileService::class)->name('profile-service');
     });
 });

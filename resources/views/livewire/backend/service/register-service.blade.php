@@ -55,7 +55,7 @@
                 <div>
                     <button type="submit" class="btn btn-primary text-capitalize"><span
                             class="fa fa-save"></span> {{__('save')}}</button>
-                    <a href="{{route('backend.service.register-service')}}" class="btn btn-primary"><span
+                    <a href="{{route('backend.service.daftar-service')}}" class="btn btn-primary"><span
                             class="fa fa-arrow-left"></span> {{__('to-list')}}</a>
                 </div>
             </div>

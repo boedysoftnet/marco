@@ -28,4 +28,10 @@ class Service extends Model
     {
         return asset('storage/' . $this->attributes['path']);
     }
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+    public function kategoriService(){
+        return $this->belongsTo(KategoriService::class);
+    }
 }

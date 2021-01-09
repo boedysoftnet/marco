@@ -1,6 +1,6 @@
 <div>
     <div class="title d-flex justify-content-between">
-        <h2 class="text-uppercase">{{__('list-doctor')}}</h2>
+        <h2 class="text-uppercase">{{__('list medical specialist')}}</h2>
         <a href="{{route('backend.dokter.register-dokter')}}" class="text-capitalize"><span class="fa fa-plus"></span> {{__('new-data')}}</a>
     </div>
     <div class="input-group mb-2 text-capitalize">

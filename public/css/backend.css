@@ -14074,6 +14074,7 @@ h4 {
 #panel .panel-side .side-menu .side-dropdown a {
   background-color: #caf0f8;
   color: #023e8a;
+  padding: 5px 0;
 }
 
 #panel .panel-side .side-menu .fa {

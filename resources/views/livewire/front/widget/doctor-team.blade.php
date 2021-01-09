@@ -1,13 +1,9 @@
-<section id="dokter" class="container">
+<section id="dokter" class="">
     @if ($filter??'')
         @php($dokters=\App\Models\Dokter::where('spesialis','like',"%$filter%")->orderBy('id','desc')->paginate(3))
     @else
         @php($dokters=\App\Models\Dokter::orderBy('id','desc')->paginate(3))
     @endif
-    <div class="dokter-title">
-        <h2>{{__('page.doctor')}}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, velit.</p>
-    </div>
     <div class="row">
         @foreach ($dokters as $item)
             <div class="col-lg-4 mb-2">
