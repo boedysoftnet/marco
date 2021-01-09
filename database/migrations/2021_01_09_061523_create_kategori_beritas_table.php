@@ -15,6 +15,10 @@ class CreateKategoriBeritasTable extends Migration
     {
         Schema::create('kategori_beritas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->longText('kategoris');
+            $table->longText('path');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

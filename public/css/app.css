@@ -14319,6 +14319,9 @@ h4 {
 
 #berita .card-img-top {
   border-radius: 0;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #berita .card .card-body .card-title {

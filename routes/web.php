@@ -1,12 +1,16 @@
 <?php
 
 use App\Http\Controllers\LangController;
+use App\Http\Livewire\Backend\Berita\DaftarBerita;
+use App\Http\Livewire\Backend\Berita\RegisterBerita;
 use App\Http\Livewire\Backend\Config\DaftarConfig;
 use App\Http\Livewire\Backend\Config\RegisterConfig;
 use App\Http\Livewire\Backend\Dokter\DaftarDokter;
 use App\Http\Livewire\Backend\Dokter\RegisterDokter;
 use App\Http\Livewire\Backend\Fasilitas\DaftarFasilitas;
 use App\Http\Livewire\Backend\Fasilitas\RegisterFasilitas;
+use App\Http\Livewire\Backend\KategoriBerita\DaftarKategoriBerita;
+use App\Http\Livewire\Backend\KategoriBerita\RegisterKategoriBerita;
 use App\Http\Livewire\Backend\KategoriService\DaftarKategori;
 use App\Http\Livewire\Backend\KategoriService\RegisterKategori;
 use App\Http\Livewire\Backend\Lang\DaftarLang;
@@ -17,6 +21,7 @@ use App\Http\Livewire\Backend\Story\DaftarStory;
 use App\Http\Livewire\Backend\Story\RegisterStory;
 use App\Http\Livewire\Front\Dokter\ProfileDokter;
 use App\Http\Livewire\Front\Page\FasilitasProfile;
+use App\Http\Livewire\Front\Page\ProfileBerita;
 use App\Http\Livewire\Front\Page\ServiceInfo;
 use App\Http\Livewire\Front\Page\TheirOur;
 use App\Http\Livewire\Front\Service\ProfileService;
@@ -59,6 +64,16 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
         Route::get('register-kategori-service', RegisterKategori::class)->name('register-kategori-service');
         Route::get('edit/{kategoriService:slug}', RegisterKategori::class)->name('edit-kategori-service');
     });
+    Route::group(['prefix' => 'kategori-berita', 'as' => 'kategori-berita.'], function () {
+        Route::get('daftar-kategori-berita', DaftarKategoriBerita::class)->name('daftar-kategori-berita');
+        Route::get('register-kategori-berita', RegisterKategoriBerita::class)->name('register-kategori-berita');
+        Route::get('edit/{kategoriBerita}', RegisterKategoriBerita::class)->name('edit-kategori-berita');
+    });
+    Route::group(['prefix' => 'berita', 'as' => 'berita.'], function () {
+        Route::get('daftar-berita', DaftarBerita::class)->name('daftar-berita');
+        Route::get('register-berita', RegisterBerita::class)->name('register-berita');
+        Route::get('edit/{berita}', RegisterBerita::class)->name('edit-berita');
+    });
 });
 Route::group(['prefix' => '', 'as' => 'front.'], function () {
     Route::view('', 'front.home.dashboard')->name('home');
@@ -69,6 +84,9 @@ Route::group(['prefix' => '', 'as' => 'front.'], function () {
     });
     Route::group(['prefix' => 'fasilitas', 'as' => 'fasilitas.'], function () {
         Route::get('profile-fasilitas/{fasilitas:slug}', FasilitasProfile::class)->name('profile-fasilitas');
+    });
+    Route::group(['prefix' => 'berita', 'as' => 'berita.'], function () {
+        Route::get('profile-berita/{berita:slug}', ProfileBerita::class)->name('profile-berita');
     });
     Route::group(['prefix' => 'service', 'as' => 'service.'], function () {
         Route::get('profile-test/{kategoriId}/{serviceId}', ServiceInfo::class)->name('test-service');

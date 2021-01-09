@@ -330,6 +330,8 @@
 
         .card-img-top {
             border-radius: 0;
+            height: 250px;
+            object-fit: cover;
         }
 
         .card {

@@ -19,8 +19,9 @@
     </div>
     <a href="" data-toggle="collapse" data-target="#news" class="dropdown-toggle"><span class="fa fa-newspaper-o"></span> {{__('page.news')}}</a>
     <div class="collapse side-dropdown" id="news">
-        <a href=""><span class="fa fa-plus"></span>{{__('page.add-news')}}</a>
-        <a href=""><span class="fa fa-list"></span>{{__('page.list-news')}}</a>
+        <a href="{{route('backend.kategori-berita.daftar-kategori-berita')}}"><span class="fa fa-plus"></span>{{__('add category')}}</a>
+        <a href="{{route('backend.kategori-berita.register-kategori-berita')}}"><span class="fa fa-plus"></span>{{__('add news')}}</a>
+        <a href="{{route('backend.berita.daftar-berita')}}"><span class="fa fa-list"></span>{{__('list news')}}</a>
     </div>
     <a href=""><span class="fa fa-user"></span> {{__('page.users')}}</a>
     <a href=""><span class="fa fa-sign-out"></span> {{__('page.logout')}}</a>

@@ -15,6 +15,14 @@ class CreateBeritasTable extends Migration
     {
         Schema::create('beritas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreignId('kategori_berita_id')->references('id')->on('kategori_beritas')->cascadeOnDelete();
+            $table->longText('juduls');
+            $table->longText('deskripsis');
+            $table->longText('path');
+            $table->longText('gallerys');
+            $table->longText('slug');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
