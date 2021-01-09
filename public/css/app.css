@@ -14085,7 +14085,7 @@ h4 {
 
 @media (max-width: 767.98px) {
   .navbar {
-    padding: 4px;
+    padding: 0 15px !important;
   }
 }
 
@@ -14502,6 +14502,7 @@ h4 {
     height: 200px;
     background-attachment: scroll !important;
     background-size: 100% 100% !important;
+    background-repeat: no-repeat;
   }
 
   .benner-title .title h2,
@@ -14548,6 +14549,51 @@ h4 {
 .benner-title .title .benner-tags li a {
   font-weight: bold;
   text-decoration: none;
+}
+
+.profile-service {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-service .benner-title {
+  background-size: 100% 100% !important;
+  background-attachment: scroll !important;
+}
+
+.profile-service .benner-title .title h2,
+.profile-service .benner-title .title .profile-dokter .dokter-title,
+.profile-dokter .profile-service .benner-title .title .dokter-title {
+  color: white;
+}
+
+.profile-service .widget-left a {
+  text-decoration: none;
+  display: flex;
+}
+
+.profile-service .widget-left a:after {
+  content: "\F061";
+  font-family: FontAwesome;
+  display: block;
+  padding-left: 0px;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.profile-service .widget-left a:hover {
+  background-color: rgba(255, 4, 4, 0.01);
+}
+
+.profile-service .widget-left a:hover:after {
+  padding-left: 20px;
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .profile-service .widget-left {
+    margin: 0 10px;
+  }
 }
 
 .story {

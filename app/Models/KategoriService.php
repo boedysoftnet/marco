@@ -4,18 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Service extends Model
+class KategoriService extends Model
 {
     use HasFactory;
-    use SoftDeletes;
 
     protected $casts = [
-        'gallerys' => 'array',
-        'deskripsis' => 'array',
-        'juduls' => 'array',
         'kategoris' => 'array',
+        'deskripsis' => 'array',
     ];
     protected $guarded = [];
 
@@ -27,5 +23,13 @@ class Service extends Model
     public function getPathAttribute()
     {
         return asset('storage/' . $this->attributes['path']);
+    }
+
+    public function service()
+    {
+        return $this->hasMany(Service::class);
+    }
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 }

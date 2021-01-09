@@ -26,12 +26,13 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
+                @php($kategoriServices=\App\Models\KategoriService::get())
                 <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"
                    id="menu-service">{{__('page.service')}}</a>
                 <div class="dropdown-menu" aria-labelledby="menu-service">
-                    <a href="" class="dropdown-item">{{__('page.one-call-doctor')}}</a>
-                    <a href="" class="dropdown-item">{{__('page.emergencty-treatment')}}</a>
-                    <a href="" class="dropdown-item">{{__('page.doctor-consultant')}}</a>
+                    @foreach ($kategoriServices as $item)
+                        <a href="{{route('front.service.profile-service',$item->slug)}}" class="dropdown-item">{{\App\Helper\BoedySoft::trans($item->kategoris) }}</a>
+                    @endforeach
                 </div>
             </li>
             <li class="nav-item"><a href="{{route('front.page-config','contact-us')}}" class="nav-link">{{__('page.contact-us')}}</a></li>

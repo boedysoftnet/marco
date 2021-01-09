@@ -15,4 +15,4 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/backend.scss', 'public/css')
     .sourceMaps();
-mix.browserSync('http://192.168.1.12:81');
+mix.browserSync('http://192.168.1.11:81');

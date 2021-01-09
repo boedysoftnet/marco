@@ -1,5 +1,5 @@
 <div wire:ignore>
-    <h2 class="text-uppercase">{{__('register service')}}</h2>
+    <h2 class="text-uppercase">{{__('register category service')}}</h2>
     <hr>
     <form class="text-capitalize" wire:submit.prevent="simpan">
         <div class="card">
@@ -19,17 +19,9 @@
                         <div class="tab-pane fade {{$index==0?'show active':''}}" id="nav-{{$item->slug}}"
                              role="tabpanel" aria-labelledby="nav-{{$item->slug}}-tab">
                             <div class="row">
-                                <div class="form-group col-lg-6">
-                                    <label for="">{{__('title')}}</label>
-                                    <input type="text" wire:model="data.juduls.{{$item->slug}}" class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-12">
                                     <label for="">{{__('category')}}</label>
-                                    <select wire:model="data.kategori_service_id" class="form-control">
-                                        @foreach (\App\Models\KategoriService::get() as $kategori)
-                                            <option value="{{$kategori->id}}">{{\App\Helper\BoedySoft::trans($kategori->kategoris) }}</option>
-                                        @endforeach
-                                    </select>
+                                    <input type="text" wire:model="data.kategoris.{{$item->slug}}" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -41,14 +33,12 @@
                     @endforeach
                     <div class="row">
                         <div class="form-group col-lg-6">
-                            <label for="" class="p-0 m-0">{{__('gallerys')}}</label>
-                            <p class="text-info p-0 m-0 small">{{__('select multi picture for gallery service')}}</p>
-                            <input type="file" wire:model="data.gallerys" multiple class="form-control">
+                            <label for="">{{__('picture')}}</label>
+                            <input type="file" wire:model="data.path" class="form-control">
                         </div>
                         <div class="form-group col-lg-6">
-                            <label for="" class="m-0 p-0">{{__('picture')}}</label>
-                            <p class="text-info p-0 m-0 small">{{__('picture to benner service')}}</p>
-                            <input type="file" wire:model="data.path" class="form-control">
+                            <label for="">{{__('icon')}}</label>
+                            <input type="file" wire:model="data.icon" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -69,7 +59,7 @@
                     height: 300,
                     callbacks: {
                         onChange: function (contents, $editable) {
-                            @foreach ($langs as $item)
+                                @foreach ($langs as $item)
                             var slug = $(this).attr('id');
                             if (slug === "{{$item->slug}}") {
                             @this.set("data.deskripsis.{{$item->slug}}", contents)

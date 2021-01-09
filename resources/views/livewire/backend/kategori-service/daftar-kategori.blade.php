@@ -1,7 +1,7 @@
 <div>
     <div class="title d-flex justify-content-between">
-        <h2 class="text-uppercase">{{__('list-services')}}</h2>
-        <a href="{{route('backend.service.register-service')}}" class="text-capitalize"><span class="fa fa-plus"></span> {{__('new-data')}}</a>
+        <h2 class="text-uppercase">{{__('list category service')}}</h2>
+        <a href="{{route('backend.kategori-service.register-kategori-service')}}" class="text-capitalize"><span class="fa fa-plus"></span> {{__('new-data')}}</a>
     </div>
     <div class="input-group mb-2 text-capitalize">
         <div class="input-group-prepend">
@@ -14,22 +14,20 @@
         <thead class="text-capitalize">
         <tr>
             <th width="10">{{__('no')}}</th>
-            <th>{{__('title')}}</th>
-            <th>{{__('description')}}</th>
+            <th>{{__('category')}}</th>
             <th>{{__('icon')}}</th>
             <th width="50">#</th>
         </tr>
         </thead>
         <tbody>
-        @forelse ($services as $index=>$item)
+        @forelse ($kategoris as $index=>$item)
             <tr>
                 <td>{{$index+1}}</td>
-                <td>{{\App\Helper\BoedySoft::trans($item->juduls) }}</td>
-                <td>{{Str::limit(strip_tags(\App\Helper\BoedySoft::trans($item->deskripsis)),100)}}</td>
-                <td width="10"><img src="{{$item->path}}" alt="" class="img-icon rounded-circle"></td>
+                <td>{{\App\Helper\BoedySoft::trans($item->kategoris) }}</td>
+                <td width="10"><img src="{{$item->icon}}" alt="" class="img-icon"></td>
                 <td>
                     <div class="d-flex justify-content-between">
-                        <a href="{{route('backend.service.edit-service',$item->slug)}}"><span class="fa fa-edit"></span></a>
+                        <a href="{{route('backend.kategori-service.edit-kategori-service',$item->slug)}}"><span class="fa fa-edit"></span></a>
                         <a href="" wire:click.prevent="destroy({{$item->id}})"><span class="fa fa-remove"></span></a>
                     </div>
                 </td>
