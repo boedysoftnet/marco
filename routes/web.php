@@ -5,6 +5,8 @@ use App\Http\Livewire\Backend\Config\DaftarConfig;
 use App\Http\Livewire\Backend\Config\RegisterConfig;
 use App\Http\Livewire\Backend\Dokter\DaftarDokter;
 use App\Http\Livewire\Backend\Dokter\RegisterDokter;
+use App\Http\Livewire\Backend\Fasilitas\DaftarFasilitas;
+use App\Http\Livewire\Backend\Fasilitas\RegisterFasilitas;
 use App\Http\Livewire\Backend\KategoriService\DaftarKategori;
 use App\Http\Livewire\Backend\KategoriService\RegisterKategori;
 use App\Http\Livewire\Backend\Lang\DaftarLang;
@@ -14,6 +16,7 @@ use App\Http\Livewire\Backend\Service\RegisterService;
 use App\Http\Livewire\Backend\Story\DaftarStory;
 use App\Http\Livewire\Backend\Story\RegisterStory;
 use App\Http\Livewire\Front\Dokter\ProfileDokter;
+use App\Http\Livewire\Front\Page\FasilitasProfile;
 use App\Http\Livewire\Front\Page\ServiceInfo;
 use App\Http\Livewire\Front\Page\TheirOur;
 use App\Http\Livewire\Front\Service\ProfileService;
@@ -34,7 +37,12 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
     Route::group(['prefix' => 'story', 'as' => 'story.'], function () {
         Route::get('daftar-story', DaftarStory::class)->name('daftar-story');
         Route::get('register-story', RegisterStory::class)->name('register-story');
-//        Route::get('edit-story/{story}',RegisterLang::class)->name('edit-lang');
+        Route::get('edit/{story}',RegisterStory::class)->name('edit-story');
+    });
+    Route::group(['prefix' => 'fasilitas', 'as' => 'fasilitas.'], function () {
+        Route::get('daftar-fasilitas', DaftarFasilitas::class)->name('daftar-fasilitas');
+        Route::get('register-fasilitas', RegisterFasilitas::class)->name('register-fasilitas');
+        Route::get('edit/{fasilitas}',RegisterFasilitas::class)->name('edit-fasilitas');
     });
     Route::group(['prefix' => 'dokter', 'as' => 'dokter.'], function () {
         Route::get('daftar-dokter', DaftarDokter::class)->name('daftar-dokter');
@@ -58,6 +66,9 @@ Route::group(['prefix' => '', 'as' => 'front.'], function () {
     Route::get('{config:slug}', TheirOur::class)->name('page-config');
     Route::group(['prefix' => 'dokter', 'as' => 'dokter.'], function () {
         Route::get('profile-dokter/{dokter}', ProfileDokter::class)->name('profile-dokter');
+    });
+    Route::group(['prefix' => 'fasilitas', 'as' => 'fasilitas.'], function () {
+        Route::get('profile-fasilitas/{fasilitas:slug}', FasilitasProfile::class)->name('profile-fasilitas');
     });
     Route::group(['prefix' => 'service', 'as' => 'service.'], function () {
         Route::get('profile-test/{kategoriId}/{serviceId}', ServiceInfo::class)->name('test-service');

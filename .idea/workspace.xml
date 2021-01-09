@@ -10,11 +10,6 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
@@ -25,22 +20,28 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6b3a637-c6a7-4b72-8523-74b1790bce58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/service/widget-service.blade.php" afterDir="false" />
+    <list default="true" id="b6b3a637-c6a7-4b72-8523-74b1790bce58" name="Default Changelist" comment="tran">
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/widget/list-fasilitas.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_01_2021_16_29__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_01_2021_16_29__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_01_2021_16_30__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_01_2021_16_30__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_01_2021_07_20__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_01_2021_07_20__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_07_01_2021_16_29__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_07_01_2021_16_29__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_01_2021_16_25__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_01_2021_16_25__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helper/BoedySoft.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper/BoedySoft.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Backend/Story/RegisterStory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Story/RegisterStory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/backend.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/backend.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/backend.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/partial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/partial/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/dokter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/dokter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/backend/dokter/daftar-dokter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/backend/dokter/daftar-dokter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/backend/service/register-service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/backend/service/register-service.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/service/profile-service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/service/profile-service.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/berita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/berita.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/fasilitas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/fasilitas.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/backend/story/daftar-story.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/backend/story/daftar-story.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +195,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/vendor/timeline" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/livewire/front/service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -203,15 +204,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\web design\marco\resources\views\livewire\front\widget" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\web design\marco\resources\views\livewire\front\service" />
       <recent name="C:\xampp\htdocs\marco\public\vendor\timeline" />
       <recent name="C:\xampp\htdocs\marco\database\migrations" />
       <recent name="C:\xampp\htdocs\marco" />
       <recent name="E:\web design\marco\resources\sass" />
-      <recent name="E:\web design\marco\resources\lang" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.watch">
+  <component name="RunManager" selected="npm.server">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -258,7 +262,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -277,7 +281,6 @@
       <workItem from="1609927455001" duration="2674000" />
       <workItem from="1609947051909" duration="6891000" />
       <workItem from="1609979766117" duration="20983000" />
-      <workItem from="1610152208004" duration="15038000" />
     </task>
     <task id="LOCAL-00001" summary="register lang">
       <created>1609953937699</created>
@@ -286,32 +289,11 @@
       <option name="project" value="LOCAL" />
       <updated>1609953937700</updated>
     </task>
-    <task id="LOCAL-00002" summary="menambahkan kategori Service.php">
-      <created>1610086784619</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1610086784619</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add kategori">
-      <created>1610087206003</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1610087206003</updated>
-    </task>
-    <task id="LOCAL-00004" summary="tran">
-      <created>1610152285671</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1610152285672</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -344,10 +326,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="register lang" />
-    <MESSAGE value="menambahkan kategori Service.php" />
-    <MESSAGE value="add kategori" />
-    <MESSAGE value="tran" />
-    <option name="LAST_COMMIT_MESSAGE" value="tran" />
+    <option name="LAST_COMMIT_MESSAGE" value="register lang" />
   </component>
   <component name="WindowStateProjectService">
     <state x="346" y="108" key="#Inspections" timestamp="1609948863837">
@@ -358,39 +337,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609842740211" />
-    <state x="472" y="196" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610152857007">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="448" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609843190194">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="448" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1609843190194" />
-    <state x="472" y="196" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1610152857007" />
-    <state x="343" y="16" key="CommitChangelistDialog2" timestamp="1610152284196">
+    <state x="343" y="16" key="CommitChangelistDialog2" timestamp="1609986618797">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="343" y="16" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1610152284196" />
+    <state x="343" y="16" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1609986618797" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1610008478418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1610008478418" />
-    <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1610152304946">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1610166713501">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610010665702" />
-    <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1610152304946" />
-    <state width="1397" height="222" key="GridCell.Tab.0.center" timestamp="1610152304945">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610166713501" />
+    <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1610166713501">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610010665702" />
-    <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1610152304945" />
-    <state width="1397" height="222" key="GridCell.Tab.0.left" timestamp="1610152304945">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610166713501" />
+    <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1610166713501">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610010665701" />
-    <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1610152304945" />
-    <state width="1397" height="222" key="GridCell.Tab.0.right" timestamp="1610152304945">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610166713501" />
+    <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1609979791175" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1610166713501">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610010665702" />
-    <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1610152304945" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610166713501" />
+    <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609841800634">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -412,19 +390,19 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="398" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1609841713334" />
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1610089123475">
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609953945700">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1610089123475" />
-    <state x="357" y="191" key="run.anything.popup" timestamp="1610155529291">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1609953945700" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1610012460181">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1610012460181" />
-    <state x="357" y="191" key="run.anything.popup/0.0.1440.860@0.0.1440.860" timestamp="1610155529291" />
-    <state x="365" y="58" width="709" height="801" key="search.everywhere.popup" timestamp="1610167382770">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="357" y="191" key="run.anything.popup/0.0.1440.860@0.0.1440.860" timestamp="1609988771836" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610172657985">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610012425927" />
-    <state x="365" y="58" width="709" height="801" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1610167382770" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610172657985" />
+    <state x="365" y="58" width="709" height="801" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1610000670405" />
   </component>
 </project>

@@ -61,4 +61,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(KategoriService::class);
     }
+    public function fasilitas()
+    {
+        return $this->hasMany(Fasilitas::class);
+    }
 }

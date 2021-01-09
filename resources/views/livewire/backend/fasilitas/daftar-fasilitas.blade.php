@@ -1,7 +1,7 @@
 <div>
     <div class="title d-flex justify-content-between">
-        <h2 class="text-uppercase">{{__('list-story')}}</h2>
-        <a href="{{route('backend.story.register-story')}}" class="text-capitalize"><span class="fa fa-plus"></span> {{__('new-data')}}</a>
+        <h2 class="text-uppercase">{{__('list fasilitas clinic')}}</h2>
+        <a href="{{route('backend.fasilitas.register-fasilitas')}}" class="text-capitalize"><span class="fa fa-plus"></span> {{__('new-data')}}</a>
     </div>
     <div class="input-group mb-2 text-capitalize">
         <div class="input-group-prepend">
@@ -9,31 +9,36 @@
         </div>
         <input type="text" wire:model.debounce.300ms="search" class="form-control text-capitalize" placeholder="{{__('filter-data')}}">
     </div>
+    <x-alert/>
     <table class="table table-bordered table-hover">
         <thead class="text-capitalize">
         <tr>
             <th width="10">{{__('no')}}</th>
-            <th>{{__('title')}}</th>
-            <th>{{__('date')}}</th>
+            <th>{{__('facilities')}}</th>
             <th>{{__('description')}}</th>
+            <th>{{__('icon')}}</th>
             <th width="50">#</th>
         </tr>
         </thead>
         <tbody>
-        @foreach ($storys as $index=>$item)
+        @forelse ($fasilitas as $index=>$item)
             <tr>
                 <td>{{$index+1}}</td>
-                <td>{{\App\Helper\BoedySoft::trans($item->juduls) }}</td>
-                <td>{{\Carbon\Carbon::parse($item->tanggal)->format('d M Y')}}</td>
-                <td>{{\Illuminate\Support\Str::limit(strip_tags(\App\Helper\BoedySoft::trans($item->deskripsis)),100)}}</td>
+                <td>{{\App\Helper\BoedySoft::trans($item->fasilitas) }}</td>
+                <td>{{Str::limit(strip_tags(\App\Helper\BoedySoft::trans($item->deskripsis)),100)}}</td>
+                <td width="10"><img src="{{$item->path}}" alt="" class="img-icon rounded-circle"></td>
                 <td>
                     <div class="d-flex justify-content-between">
-                        <a href="{{route('backend.story.edit-story',$item->id)}}"><span class="fa fa-edit"></span></a>
+                        <a href="{{route('backend.fasilitas.edit-fasilitas',$item->id)}}"><span class="fa fa-edit"></span></a>
                         <a href="" wire:click.prevent="destroy({{$item->id}})"><span class="fa fa-remove"></span></a>
                     </div>
                 </td>
             </tr>
-        @endforeach
+        @empty
+            <tr>
+                <td colspan="7" class="text-capitalize">{{__('sorry not data..!')}}</td>
+            </tr>
+        @endforelse
         </tbody>
     </table>
     <x-loading target="destroy"/>

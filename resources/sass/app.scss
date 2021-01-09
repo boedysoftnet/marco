@@ -19,6 +19,7 @@
     .container {
         max-width: 95%;
         padding: 0;
+        overflow-x: hidden;
         @include media-breakpoint-down(md) {
             max-width: 100%;
         }
@@ -115,6 +116,7 @@
         }
     }
     .navbar {
+        overflow-x: unset;
         position: sticky !important;
         top: 0;
         z-index: 1010;
@@ -202,11 +204,11 @@
         }
 
         .nav-item.dropdown {
+
             @include media-breakpoint-down(sm) {
                 width: 100%;
             }
         }
-
         .dropdown-menu {
             border-radius: 0;
             @include media-breakpoint-up(md) {
@@ -274,6 +276,10 @@
 
         .fasilitas-titile {
             text-align: center;
+        }
+        .card-img-top{
+            height: 250px;
+            object-fit: cover;
         }
 
         .card, .card-body {
@@ -597,7 +603,8 @@
         .img-gallery {
             img {
                 width: 100%;
-                height: 250px;
+                height: 200px;
+                object-fit: cover;
             }
         }
     }
@@ -680,10 +687,6 @@
         .active {
             color: darkorange;
         }
-    }
-    .top-fix{
-        position: fixed;
-        top: 0;
     }
 
 }

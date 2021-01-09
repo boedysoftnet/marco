@@ -13973,6 +13973,7 @@ h4 {
 .container {
   max-width: 95%;
   padding: 0;
+  overflow-x: hidden;
 }
 
 @media (max-width: 991.98px) {
@@ -14074,6 +14075,7 @@ h4 {
 }
 
 .navbar {
+  overflow-x: unset;
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 0;
@@ -14260,6 +14262,12 @@ h4 {
 
 #fasilitas .fasilitas-titile {
   text-align: center;
+}
+
+#fasilitas .card-img-top {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #fasilitas .card,
@@ -14598,7 +14606,9 @@ h4 {
 
 .profile-service .img-gallery img {
   width: 100%;
-  height: 250px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .story {
@@ -14682,10 +14692,5 @@ h4 {
 
 .rating .active {
   color: darkorange;
-}
-
-.top-fix {
-  position: fixed;
-  top: 0;
 }
 

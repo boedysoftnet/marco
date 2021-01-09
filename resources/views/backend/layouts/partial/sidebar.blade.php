@@ -10,6 +10,7 @@
     <a href="{{route('backend.story.daftar-story')}}"><span class="fa fa-history"></span> {{__('our-story')}}</a>
     <a href="{{route('backend.dokter.daftar-dokter')}}"><span class="fa fa-users"></span> {{__('medical specialist')}}</a>
     <a href="{{route('backend.lang.daftar-lang')}}"><span class="fa fa-language"></span> {{__('page.language')}}</a>
+    <a href="{{route('backend.fasilitas.daftar-fasilitas')}}"><span class="fa fa-gears"></span> {{__('list facilities')}}</a>
     <a href="" data-toggle="collapse" data-target="#services" class="dropdown-toggle"><span class="fa fa-server"></span> {{__('services')}}</a>
     <div class="collapse side-dropdown" id="services">
         <a href="{{route('backend.kategori-service.daftar-kategori-service')}}"><span class="fa fa-plus"></span>{{__('add category')}}</a>
