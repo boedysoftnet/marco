@@ -209,6 +209,7 @@
                 width: 100%;
             }
         }
+
         .dropdown-menu {
             border-radius: 0;
             @include media-breakpoint-up(md) {
@@ -277,7 +278,8 @@
         .fasilitas-titile {
             text-align: center;
         }
-        .card-img-top{
+
+        .card-img-top {
             height: 250px;
             object-fit: cover;
         }
@@ -690,7 +692,50 @@
             color: darkorange;
         }
     }
+    .benner-title {
+        background-size: 100% 100% !important;
+        background-attachment: scroll !important;
 
+        .title {
+            h2 {
+                color: white;
+            }
+
+            img {
+                height: 150px;
+            }
+        }
+    }
+    .comment {
+        display: flex;
+        flex-grow: 1;
+        border-radius: 0;
+        border: none;
+        justify-content: space-between;
+        .time{
+            font-weight: bold;
+            font-size: 0.7em;
+            text-align: right;
+        }
+        &:nth-child(2n+1) {
+            background-color: rgba(6, 56, 236,0.1);
+        }
+
+        .title {
+            padding: 5px 10px;
+            .rating {
+                font-size: 1.1em;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 1em;
+            }
+        }
+        .comment-item{
+            flex-grow: 3;
+        }
+    }
 }
 
 @include desktop;

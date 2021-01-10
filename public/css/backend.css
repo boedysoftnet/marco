@@ -3047,7 +3047,26 @@
 
 /* SCSS HSL */
 
-/* SCSS RGB */
+/*$navy-blue: hsla(239, 94%, 19%, 1);
+$dark-cornflower-blue: hsla(214, 97%, 27%, 1);
+$star-command-blue: hsla(201, 100%, 36%, 1);
+$blue-green: hsla(195, 100%, 39%, 1);
+$cerulean-crayola: hsla(190, 100%, 42%, 1);
+$sky-blue-crayola: hsla(190, 74%, 59%, 1);
+$sky-blue-crayola-2: hsla(189, 75%, 75%, 1);
+$blizzard-blue: hsla(190, 76%, 82%, 1);
+$powder-blue: hsla(190, 77%, 88%, 1);
+
+!* SCSS RGB *!
+$navy-blue: rgba(3, 4, 94, 1);
+$dark-cornflower-blue: rgba(2, 62, 138, 1);
+$star-command-blue: rgba(0, 119, 182, 1);
+$blue-green: rgba(0, 150, 199, 1);
+$cerulean-crayola: rgba(0, 180, 216, 1);
+$sky-blue-crayola: rgba(72, 202, 228, 1);
+$sky-blue-crayola-2: rgba(144, 224, 239, 1);
+$blizzard-blue: rgba(173, 232, 244, 1);
+$powder-blue: rgba(202, 240, 248, 1);*/
 
 /* SCSS Gradient */
 
@@ -13965,7 +13984,7 @@ h4 {
 }
 
 .navbar {
-  background-color: #023e8a;
+  background-color: #023e8aff;
 }
 
 .navbar .navbar-brand .logo {
@@ -13980,7 +13999,7 @@ h4 {
 }
 
 .navbar .dropdown-menu.show {
-  background-color: #caf0f8;
+  background-color: #caf0f8ff;
   min-width: 250px;
   transform: translateX(-68%);
   transition: 0.6s;
@@ -13999,7 +14018,7 @@ h4 {
   align-items: center;
   padding: 10px;
   background-color: #0077b6;
-  color: #caf0f8;
+  color: #caf0f8ff;
 }
 
 .navbar .navbar-profile img {
@@ -14017,7 +14036,7 @@ h4 {
 }
 
 #panel .panel-side {
-  background-color: #0096c7;
+  background-color: #0000fd;
   height: 100vh;
   position: -webkit-sticky;
   position: sticky;
@@ -14038,7 +14057,7 @@ h4 {
   align-items: center;
   padding: 20px 0;
   background-color: #0077b6;
-  color: #caf0f8;
+  color: #caf0f8ff;
 }
 
 #panel .panel-side .side-menu .side-profile .btn {
@@ -14048,8 +14067,8 @@ h4 {
   border-radius: 2em;
   border: none;
   padding: 8px;
-  box-shadow: 0 0 2px #caf0f8;
-  background-color: #023e8a;
+  box-shadow: 0 0 2px #caf0f8ff;
+  background-color: #023e8aff;
 }
 
 #panel .panel-side .side-menu .side-profile .btn .fa {
@@ -14072,8 +14091,8 @@ h4 {
 }
 
 #panel .panel-side .side-menu .side-dropdown a {
-  background-color: #caf0f8;
-  color: #023e8a;
+  background-color: #caf0f8ff;
+  color: #023e8aff;
   padding: 5px 0;
 }
 
@@ -14087,14 +14106,14 @@ h4 {
   text-decoration: none;
   display: block;
   padding: 10px;
-  color: #caf0f8;
-  border-bottom: dotted 1px #023e8a;
+  color: #caf0f8ff;
+  border-bottom: dotted 1px #023e8aff;
 }
 
 .table thead tr th {
   padding: 5px;
-  background-color: #ade8f4;
-  color: #03045e;
+  background-color: #ade8f4ff;
+  color: #03045eff;
 }
 
 .table tbody tr td {

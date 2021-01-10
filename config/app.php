@@ -174,7 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        Monarobase\CountryList\CountryListServiceProvider::class,
     ],
 
     /*
@@ -227,6 +227,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'BoedySoft' => App\Helper\BoedySoft::class,
+        'Countries' => Monarobase\CountryList\CountryListFacade::class,
     ],
 
 ];

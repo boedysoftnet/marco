@@ -24,9 +24,9 @@ use App\Http\Livewire\Front\Page\FasilitasProfile;
 use App\Http\Livewire\Front\Page\ProfileBerita;
 use App\Http\Livewire\Front\Page\ServiceInfo;
 use App\Http\Livewire\Front\Page\TheirOur;
+use App\Http\Livewire\Front\Penilaian\InfoPenilaian;
 use App\Http\Livewire\Front\Service\ProfileService;
 use Illuminate\Support\Facades\Route;
-
 
 Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
     Route::view('', 'backend.layouts.index');
@@ -42,12 +42,12 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
     Route::group(['prefix' => 'story', 'as' => 'story.'], function () {
         Route::get('daftar-story', DaftarStory::class)->name('daftar-story');
         Route::get('register-story', RegisterStory::class)->name('register-story');
-        Route::get('edit/{story}',RegisterStory::class)->name('edit-story');
+        Route::get('edit/{story}', RegisterStory::class)->name('edit-story');
     });
     Route::group(['prefix' => 'fasilitas', 'as' => 'fasilitas.'], function () {
         Route::get('daftar-fasilitas', DaftarFasilitas::class)->name('daftar-fasilitas');
         Route::get('register-fasilitas', RegisterFasilitas::class)->name('register-fasilitas');
-        Route::get('edit/{fasilitas}',RegisterFasilitas::class)->name('edit-fasilitas');
+        Route::get('edit/{fasilitas}', RegisterFasilitas::class)->name('edit-fasilitas');
     });
     Route::group(['prefix' => 'dokter', 'as' => 'dokter.'], function () {
         Route::get('daftar-dokter', DaftarDokter::class)->name('daftar-dokter');
@@ -93,6 +93,8 @@ Route::group(['prefix' => '', 'as' => 'front.'], function () {
         Route::get('profile-info/{kategoriSlug}/{serviceSlug}', ServiceInfo::class)->name('info-service');
         Route::get('profile-service/{kategoriService:slug}', ProfileService::class)->name('profile-service');
     });
+    Route::group(['prefix' => 'penilaian', 'as' => 'penilaian.'], function () {
+        Route::get('info-penilaian', InfoPenilaian::class)->name('info-penilaian');
+    });
 });
-
 
