@@ -7,5 +7,6 @@
     "filter-data":"filter data",
     "all-data":"all data",
     "vision-mission":"vision & mission",
-    "slug":"slug"
+    "slug":"slug",
+    "hallo": "hello :name, welcome to member"
 }

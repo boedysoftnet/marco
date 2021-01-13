@@ -8,9 +8,8 @@
         </div>
         <div class="col-lg-6 kontak-info">
             <div class="kontak-title">
-                <h2>{{__('page.get-in-touch')}}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis dicta ea est ex,
-                    itaque laborum numquam quibusdam saepe voluptatum.</p>
+                <h2>{{__('contact us')}}</h2>
+                <p>Send your inquiries and questions to BIMC Hospitals Bali by simply fill out this form and we will respond to you in shortly.</p>
             </div>
             <livewire:front.page.kontak/>
         </div>

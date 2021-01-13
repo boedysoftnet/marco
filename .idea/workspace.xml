@@ -20,32 +20,65 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6b3a637-c6a7-4b72-8523-74b1790bce58" name="Default Changelist" comment="menambahkan berita dan KategoriBerita.php">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Page/Kontak.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Penilaian/InfoPenilaian.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Penilaian.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/PenilaianFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_10_121946_create_penilaians_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/page/kontak.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/penilaian/info-penilaian.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/penilaian/list-penilaian.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/marco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/marco.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="b6b3a637-c6a7-4b72-8523-74b1790bce58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BennerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RequestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Benner/DaftarBenner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Benner/RegisterBenner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Sosmed/DaftarSosmed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Sosmed/RegisterSosmed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/User/EditUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/User/UpdateUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Member/EditMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Member/LoginMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Member/ProfileMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Member/RegisterMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Page/InfoBenner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AuthAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Benner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Member.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/BennerFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/MemberFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/RequestFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_011639_create_requests_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_234028_create_benners_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_13_003849_create_members_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backend/benner/daftar-benner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backend/benner/register-benner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backend/sosmed/daftar-sosmed.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backend/sosmed/register-sosmed.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backend/user/edit-user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/backend/user/update-user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/member/edit-member.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/member/login-member.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/member/profile-member.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/member/register-member.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/page/info-benner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/widget/list-benner.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marco.sql" beforeDir="false" afterPath="$PROJECT_DIR$/marco.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Backend/Service/DaftarService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Service/DaftarService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Backend/Service/RegisterService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Backend/Service/RegisterService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Front/Page/Kontak.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Page/Kontak.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Front/Page/ServiceInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Page/ServiceInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/KategoriService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/KategoriService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ServiceFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ServiceFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/backend.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/alert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/alert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/backend.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/backend.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/partial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/partial/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/benner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/benner.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/kontak.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/kontak.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partial/sosmed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partial/sosmed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/page/kontak.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/page/kontak.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/page/their-our.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/page/their-our.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +89,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../marco\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -201,9 +237,13 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Livewire/Front/Page" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/livewire/front/widget" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -212,15 +252,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\web design\marco\app\Http\Livewire\Front\Page" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\web design\marco\resources\views\livewire\front\widget" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\web design\marco\resources\views\livewire\front\widget" />
+      <recent name="E:\web design\marco\app\Http\Livewire\Front\Page" />
       <recent name="E:\web design\marco\resources\views\livewire\front\service" />
       <recent name="C:\xampp\htdocs\marco\public\vendor\timeline" />
       <recent name="C:\xampp\htdocs\marco\database\migrations" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\web design\marco\resources\views\livewire\front\widget" />
     </key>
   </component>
   <component name="RunManager" selected="npm.server">
@@ -259,10 +299,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="npm.dev" />
       <item itemvalue="npm.server" />
       <item itemvalue="npm.watch" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="PHPUnit.phpunit.xml" />
     </list>
     <recent_temporary>
       <list>
@@ -272,7 +312,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\B-Soft\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -289,7 +329,9 @@
       <workItem from="1609927455001" duration="2674000" />
       <workItem from="1609947051909" duration="6891000" />
       <workItem from="1609979766117" duration="20983000" />
-      <workItem from="1610276168094" duration="13141000" />
+      <workItem from="1610276168094" duration="13239000" />
+      <workItem from="1610410558024" duration="3852000" />
+      <workItem from="1610490761738" duration="31608000" />
     </task>
     <task id="LOCAL-00001" summary="register lang">
       <created>1609953937699</created>
@@ -319,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610199787729</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="menambahkan Penilaian.php">
+      <created>1610289567416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610289567416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,9 +409,14 @@
     <MESSAGE value="menambah fasilitas.blade.php" />
     <MESSAGE value="menambahkan berita" />
     <MESSAGE value="menambahkan berita dan KategoriBerita.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="menambahkan berita dan KategoriBerita.php" />
+    <MESSAGE value="menambahkan Penilaian.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="menambahkan Penilaian.php" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Deployment" timestamp="1610491802480">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1610491802480" />
     <state x="346" y="108" key="#Inspections" timestamp="1609948863837">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -375,38 +429,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="448" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1609843190194" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610195806761">
+    <state x="432" y="200" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1610412736083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1610195806761" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1610289401032">
+    <state x="432" y="200" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1366.728@0.0.1366.728" timestamp="1610412736083" />
+    <state x="400" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610517291979">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1610289401032" />
+    <state x="400" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1610517291979" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610522011152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1610522011152" />
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1610289562698">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1610289562698" />
     <state x="343" y="16" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1609986618797" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1610008478418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1610008478418" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1610288239169">
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1610412806306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610288239169" />
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610412806306" />
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom" timestamp="1610523888956">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610523888956" />
     <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1610288239168">
+    <state width="1322" height="179" key="GridCell.Tab.0.center" timestamp="1610523888956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610288239168" />
+    <state width="1322" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610523888956" />
     <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1610288239166">
+    <state width="1322" height="179" key="GridCell.Tab.0.left" timestamp="1610523888956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610288239166" />
+    <state width="1322" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610523888956" />
     <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1609979791175" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1610288239169">
+    <state width="1322" height="179" key="GridCell.Tab.0.right" timestamp="1610523888956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610288239169" />
+    <state width="1322" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610523888956" />
     <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1609979791176" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609841800634">
       <screen x="0" y="0" width="1366" height="728" />
@@ -416,10 +482,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="514" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1610011266914" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1610281009684">
+    <state x="184" y="9" key="SettingsEditor" timestamp="1610505826475">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1610281009684" />
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1610505826475" />
     <state x="194" y="11" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1609949584133" />
     <state x="92" y="92" width="1182" height="544" key="ShowDiffWithBranchDialog" timestamp="1610008478418">
       <screen x="0" y="0" width="1366" height="728" />
@@ -429,20 +495,24 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="398" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1609841713334" />
-    <state x="296" y="138" key="Vcs.Push.Dialog.v2" timestamp="1610199793555">
+    <state x="296" y="138" key="Vcs.Push.Dialog.v2" timestamp="1610289574992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="296" y="138" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610199793555" />
+    <state x="296" y="138" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610289574992" />
     <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1609953945700" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1610012460181">
+    <state x="488" y="94" key="ftp.server.browser" timestamp="1610491734660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1610012460181" />
+    <state x="488" y="94" key="ftp.server.browser/0.0.1366.728@0.0.1366.728" timestamp="1610491734660" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1610523413415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1610523413415" />
     <state x="357" y="191" key="run.anything.popup/0.0.1440.860@0.0.1440.860" timestamp="1609988771836" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610288579934">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610523905410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610288579934" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610523905410" />
     <state x="365" y="58" width="709" height="801" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1610000670405" />
   </component>
 </project>

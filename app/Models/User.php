@@ -9,37 +9,8 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    use HasFactory;
+    protected $guarded=[];
 
     public function config()
     {
@@ -72,5 +43,17 @@ class User extends Authenticatable
     public function berita()
     {
         return $this->hasMany(Berita::class);
+    }
+    public function benner()
+    {
+        return $this->hasMany(Benner::class);
+    }
+    public function getPathAttribute()
+    {
+        if ($this->attributes['path']){
+            return asset('storage/'.$this->attributes['path']);
+        }else{
+            return "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg";
+        }
     }
 }

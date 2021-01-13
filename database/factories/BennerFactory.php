@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Sosmed;
+use App\Models\Benner;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ServiceFactory extends Factory
+class BennerFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Sosmed::class;
+    protected $model = Benner::class;
 
     /**
      * Define the model's default state.

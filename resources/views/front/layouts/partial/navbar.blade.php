@@ -37,7 +37,13 @@
             </li>
             <li class="nav-item"><a href="{{route('front.page-config','contact-us')}}" class="nav-link">{{__('page.contact-us')}}</a></li>
             <li class="nav-item"><a href="{{route('front.penilaian.info-penilaian')}}" class="nav-link">{{__('their our')}}</a></li>
-            <li class="nav-item"><a href="" class="nav-link">{{__('page.membership')}}</a></li>
+            <li class="nav-item"><a href="{{route('front.page-config','member-ship')}}" class="nav-link">{{__('page.membership')}}</a></li>
+            @if(session()->has('member_id'))
+               <li class="nav-item"><a href="{{route('front.member.profile-member')}}" class="nav-link">{{__('my profile')}}</a></li>
+               <li class="nav-item"><a href="{{route('front.member.logout-member')}}" class="nav-link">{{__('logout')}}</a></li>
+            @else
+                <li class="nav-item"><a href="{{route('front.member.login-member')}}" class="nav-link">{{__('login')}}</a></li>
+            @endif
         </ul>
     </div>
 </nav>

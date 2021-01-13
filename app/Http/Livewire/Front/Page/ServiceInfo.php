@@ -3,7 +3,7 @@
 namespace App\Http\Livewire\Front\Page;
 
 use App\Models\KategoriService;
-use App\Models\Service;
+use App\Models\Sosmed;
 use Livewire\Component;
 
 class ServiceInfo extends Component
@@ -14,7 +14,7 @@ class ServiceInfo extends Component
     public function mount($kategoriSlug, $serviceSlug)
     {
         $this->kategoriService = KategoriService::whereSlug($kategoriSlug)->first();
-        $this->service = Service::whereSlug($serviceSlug)->first();
+        $this->service = Sosmed::whereSlug($serviceSlug)->first();
     }
 
     public function render()

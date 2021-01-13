@@ -27,9 +27,16 @@ class KategoriService extends Model
 
     public function service()
     {
-        return $this->hasMany(Service::class);
+        return $this->hasMany(Sosmed::class);
     }
-    public function user(){
+
+    public function user()
+    {
         return $this->belongsTo(User::class);
+    }
+
+    public function request()
+    {
+        return $this->hasMany(Request::class);
     }
 }

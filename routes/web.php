@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\LangController;
+use App\Http\Livewire\Backend\Benner\DaftarBenner;
+use App\Http\Livewire\Backend\Benner\RegisterBenner;
 use App\Http\Livewire\Backend\Berita\DaftarBerita;
 use App\Http\Livewire\Backend\Berita\RegisterBerita;
 use App\Http\Livewire\Backend\Config\DaftarConfig;
@@ -17,10 +19,17 @@ use App\Http\Livewire\Backend\Lang\DaftarLang;
 use App\Http\Livewire\Backend\Lang\RegisterLang;
 use App\Http\Livewire\Backend\Service\DaftarService;
 use App\Http\Livewire\Backend\Service\RegisterService;
+use App\Http\Livewire\Backend\Sosmed\DaftarSosmed;
+use App\Http\Livewire\Backend\Sosmed\RegisterSosmed;
 use App\Http\Livewire\Backend\Story\DaftarStory;
 use App\Http\Livewire\Backend\Story\RegisterStory;
+use App\Http\Livewire\Backend\User\UpdateUser;
 use App\Http\Livewire\Front\Dokter\ProfileDokter;
+use App\Http\Livewire\Front\Member\EditMember;
+use App\Http\Livewire\Front\Member\LoginMember;
+use App\Http\Livewire\Front\Member\ProfileMember;
 use App\Http\Livewire\Front\Page\FasilitasProfile;
+use App\Http\Livewire\Front\Page\InfoBenner;
 use App\Http\Livewire\Front\Page\ProfileBerita;
 use App\Http\Livewire\Front\Page\ServiceInfo;
 use App\Http\Livewire\Front\Page\TheirOur;
@@ -29,7 +38,7 @@ use App\Http\Livewire\Front\Service\ProfileService;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
-    Route::view('', 'backend.layouts.index');
+    Route::view('', 'backend.layouts.index')->name('dashboard');
     Route::group(['prefix' => 'config', 'as' => 'config.'], function () {
         Route::get('daftar-config', DaftarConfig::class)->name('daftar-config');
         Route::get('register-config/{config}', RegisterConfig::class)->name('register-config');
@@ -43,6 +52,12 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
         Route::get('daftar-story', DaftarStory::class)->name('daftar-story');
         Route::get('register-story', RegisterStory::class)->name('register-story');
         Route::get('edit/{story}', RegisterStory::class)->name('edit-story');
+    });
+    Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+        Route::get('daftar-user', DaftarStory::class)->name('daftar-user');
+        Route::get('register-user', RegisterStory::class)->name('register-user');
+        Route::get('edit/{user}', RegisterStory::class)->name('edit-user');
+        Route::get('update', UpdateUser::class)->name('update-user');
     });
     Route::group(['prefix' => 'fasilitas', 'as' => 'fasilitas.'], function () {
         Route::get('daftar-fasilitas', DaftarFasilitas::class)->name('daftar-fasilitas');
@@ -74,6 +89,16 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
         Route::get('register-berita', RegisterBerita::class)->name('register-berita');
         Route::get('edit/{berita}', RegisterBerita::class)->name('edit-berita');
     });
+    Route::group(['prefix' => 'benner', 'as' => 'benner.'], function () {
+        Route::get('daftar-benner', DaftarBenner::class)->name('daftar-benner');
+        Route::get('register-benner', RegisterBenner::class)->name('register-benner');
+        Route::get('edit/{benner}', RegisterBenner::class)->name('edit-benner');
+    });
+    Route::group(['prefix' => 'sosmed', 'as' => 'sosmed.'], function () {
+        Route::get('daftar-sosmed', DaftarSosmed::class)->name('daftar-sosmed');
+        Route::get('register-sosmed', RegisterSosmed::class)->name('register-sosmed');
+        Route::get('edit/{sosmed}', RegisterSosmed::class)->name('edit-sosmed');
+    });
 });
 Route::group(['prefix' => '', 'as' => 'front.'], function () {
     Route::view('', 'front.home.dashboard')->name('home');
@@ -95,6 +120,18 @@ Route::group(['prefix' => '', 'as' => 'front.'], function () {
     });
     Route::group(['prefix' => 'penilaian', 'as' => 'penilaian.'], function () {
         Route::get('info-penilaian', InfoPenilaian::class)->name('info-penilaian');
+    });
+    Route::group(['prefix' => 'benner', 'as' => 'benner.'], function () {
+        Route::get('info-benner/{benner:slug}', InfoBenner::class)->name('info-benner');
+    });
+    Route::group(['prefix' => 'member', 'as' => 'member.'], function () {
+        Route::get('profile-member', ProfileMember::class)->name('profile-member');
+        Route::get('logout', function (){
+            session()->remove('member_id');
+            return redirect(\route('front.home'));
+        })->name('logout-member');
+        Route::get('edit-member', EditMember::class)->name('edit-member');
+        Route::get('login-member', LoginMember::class)->name('login-member');
     });
 });
 

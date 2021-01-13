@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Backend\Service;
 
 use App\Models\Service;
+use App\Models\Sosmed;
 use Livewire\Component;
 
 class DaftarService extends Component

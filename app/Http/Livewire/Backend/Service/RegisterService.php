@@ -18,6 +18,7 @@ class RegisterService extends Component
         if (count($service->toArray())) {
             $this->data=$service->toArray();
         }
+        $this->data['kategori_service_id']=1;
         $this->data['gallerys']=[];
         unset($this->data['path']);
     }

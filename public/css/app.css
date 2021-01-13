@@ -13990,7 +13990,7 @@ h4 {
 }
 
 .container {
-  max-width: 95%;
+  max-width: 90%;
   padding: 0;
   overflow-x: hidden;
 }
@@ -14177,7 +14177,7 @@ h4 {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar .navbar-nav {
-    width: 60%;
+    width: 70% !important;
   }
 }
 
@@ -14189,7 +14189,7 @@ h4 {
 
 @media (min-width: 1200px) {
   .navbar .navbar-nav {
-    width: 50%;
+    width: 75%;
   }
 }
 
@@ -14717,7 +14717,7 @@ h4 {
 }
 
 .benner-title {
-  background-size: 100% 100% !important;
+  background-size: cover !important;
   background-attachment: scroll !important;
 }
 
@@ -14729,6 +14729,12 @@ h4 {
 
 .benner-title .title img {
   height: 150px;
+}
+
+@media (max-width: 767.98px) {
+  .benner-title .title img {
+    height: 100px;
+  }
 }
 
 .comment {
@@ -14764,5 +14770,48 @@ h4 {
 
 .comment .comment-item {
   flex-grow: 3;
+}
+
+.profile-member {
+  margin-bottom: 25px;
+}
+
+.profile-member .title {
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom: 25px;
+}
+
+.profile-member .img-custom img {
+  width: 20px;
+  height: 20px;
+  border-radius: 2em;
+}
+
+.profile-member .benner-title {
+  margin-bottom: 15px;
+}
+
+.profile-member .benner-title img {
+  height: 150px;
+  width: auto;
+}
+
+.profile-member img {
+  width: 150px;
+  height: 150px;
+  margin-right: 15px;
+}
+
+.profile-member .img-berkas {
+  height: 300px;
+  width: auto;
+}
+
+@media (max-width: 767.98px) {
+  .profile-member .img-berkas {
+    width: 100%;
+    height: auto;
+  }
 }
 

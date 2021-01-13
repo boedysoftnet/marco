@@ -61,9 +61,11 @@
         .panel-side{
             background-color: $blue-green;
             height: 100vh;
-            position: sticky;
-            top: 0;
+            //position: sticky;
+            //top: 0;
+            //overflow-y: scroll;
             .side-menu{
+                background-color: $blue-green;
                 text-transform: capitalize;
                 display: flex;
                 justify-items: center;

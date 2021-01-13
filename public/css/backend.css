@@ -14038,12 +14038,10 @@ h4 {
 #panel .panel-side {
   background-color: #0000fd;
   height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 #panel .panel-side .side-menu {
+  background-color: #0000fd;
   text-transform: capitalize;
   display: flex;
   justify-items: center;
